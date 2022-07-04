@@ -1,0 +1,53 @@
+-gitignore file should be directly under project name (ı fixed it for you)
+-In pages package, there should be a BasePage where other pages extend
+-"json:target/cucumber.json" line is required in Runner class ( I added it for you)
+-in configuration.properties file, you need to update the data
+
+-CengizRunner is not a good naming convention, you can just say Runner or TestRunner
+ but after changing the name of runner class, you should also change the name in pom.xml file
+ for example, if you^d like to name it as "TestRunner", it would be like that:
+ (look at line 24 and 44)
+
+ //before change----------
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
+                    <!--                    <threadCount>4</threadCount>-->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <includes>
+                        <include>24 and**/CukesRunner*.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+ //after change-------------
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <parallel>methods</parallel>
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
+                    <!--                    <threadCount>4</threadCount>-->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <includes>
+                        <include>**/TestRunner*.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+-package names should be like "src.test.java.com.transmuda" (ı changed it ffor you)
+-other than that, your project is good

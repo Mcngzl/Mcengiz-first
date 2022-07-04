@@ -1,7 +1,7 @@
-package com.cydeo.step_definitions;
+package com.transmuda.step_definitions;
 
-import com.cydeo.pages.LoginPage;
-import com.cydeo.utilities.Driver;
+import com.transmuda.pages.LoginPage;
+import com.transmuda.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

@@ -1,4 +1,4 @@
-package com.cydeo.utilities;
+package com.transmuda.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;
