@@ -16,10 +16,10 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/transmuda/step_definitions",
         dryRun = false,
-        tags = "",
+        tags = "@wip",
         publish = false
 
 )
-public class CengizRunner {
+public class CukesRunner {
 
 }

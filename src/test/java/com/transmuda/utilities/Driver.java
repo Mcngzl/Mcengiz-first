@@ -1,5 +1,6 @@
 package com.transmuda.utilities;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,10 +9,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
+
     /*
-   Creating a private constructor, so we are closing
-   access to the object of this class from outside the class
-    */
+    Creating a private constructor, so we are closing
+    access to the object of this class from outside the class
+     */
     private Driver(){}
 
     /*
@@ -70,5 +72,6 @@ public class Driver {
             driverPool.remove();
         }
     }
+
 
 }

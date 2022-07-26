@@ -49,5 +49,5 @@
     </build>
 
 
--package names should be like "src.test.java.com.transmuda" (ı changed it ffor you)
+-package names should be like "src.test.java.com.transmuda" (ı changed it for you)
 -other than that, your project is good
